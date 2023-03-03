@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import ProductCard from './components/ProductCard';
+
+const foodData = { name: "Stewed cabbage with sauce", price: 5.90, image: "https://www.mygorgeousrecipes.com/wp-content/uploads/2020/02/Stewed-Cabbage-1.jpg"};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProductCard data={foodData}/>
     </div>
   );
 }
